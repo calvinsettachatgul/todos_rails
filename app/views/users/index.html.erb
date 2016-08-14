@@ -4,5 +4,6 @@
 <ul>
 <% @all_users.each do | user | %>
 	<li><%= user.first_name %>  <%= user.last_name %> <%= user.email %></li>
+	<%= link_to user.email, user%>
 <% end %>
 </ul>
