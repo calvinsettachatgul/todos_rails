@@ -1,2 +1,16 @@
 <h1>Todos#index</h1>
 <p>Find me in app/views/todos/index.html.erb</p>
+<%= @user.first_name %>
+<%= @user.last_name %>
+<%= @user.email %>
+
+<ul>
+<% @todos.each do | todo | %>
+	<li>
+		<%= todo.title %>
+		<%= todo.detail %>
+		<%= todo.status %>
+	</li>
+<% end %>
+
+</ul>
