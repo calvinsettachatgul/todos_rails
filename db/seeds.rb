@@ -14,7 +14,6 @@ users = [user1, user2, user3]
 users.each do |user |
 	user.save
 	user.update(first_name: "user#{user.id}first", last_name: "user#{user.id}last", email: "user#{user.id}@example.com")
-	user.save
 end
 
 users.each_with_index do | user, user_index | 
